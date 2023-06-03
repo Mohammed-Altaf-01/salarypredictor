@@ -6,14 +6,16 @@
 - Optimized Linear, Lasso, and Random Forest Regressors using GridsearchCV to reach the best model.
 - Built a Web application using Streamlit and deployed it on Streamlit Cloud <a href="https://salarypredictor.streamlit.app/">Acess the app here</a>
 
-## Resources Used
+# Resources Used
 
 **Python Version:** 3.10
 **Packages:** pandas, numpy, sklearn, matplotlib, seaborn, selenium, streamlit, json, pickle,xgboost  
 **For Web Framework Requirements:** `pip install -r requirements.txt`  
 **Scraper Github:** https://github.com/arapfaik/scraping-glassdoor-selenium
 
-## Web Scraping
+# QuickStart Demo
+
+# Web Scraping
 
 Tweaked the web scraper github repo (above) to scrape 1000 job postings from glassdoor.com. With each job, we got the following:
 
@@ -32,7 +34,7 @@ Tweaked the web scraper github repo (above) to scrape 1000 job postings from gla
 - Revenue
 - Competitors
 
-## Data Cleaning
+# Data Cleaning
 
 After scraping the data, I needed to clean it up so that it was usable for our model. I made the following changes and created the following variables:
 
@@ -51,7 +53,7 @@ After scraping the data, I needed to clean it up so that it was usable for our m
 - Column for simplified job title and Seniority
 - Column for description length
 
-## EDA
+# EDA
 
 Most of the features are not correlated, that is a good sign and would help in the actual prediction.
 
@@ -73,6 +75,12 @@ Companies hiring count based on there employees Size in there company
 
 <img src="readmestuff/r2score.jpg" width=50%>
 
-## Model Building
+# Model Building
 
 First converted the Categorical Features into numerical and scaled all the values, saved a pipeline for further used as an endpoint for the frontend. Then Experimented with various models such as **Xg regressor, Randomforest Regressor, Ridge and Lasso Regressor, Decision Tree regressor and have also tried an Stacking Ensemble with top 5 performing models** But due to improper results it was avoided and Xg boost is used in the end, which was giving out the best results.
+
+# License
+
+[(Back to top)](#table-of-contents)
+
+This is a personal project I have made using the modularized code and productionized it as a RESTFUL api instead of using the jupyter notebooks, anyonce can use this freely without any restrictions, but don't forget to tag 😊

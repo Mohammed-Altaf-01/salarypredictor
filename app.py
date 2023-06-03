@@ -3,6 +3,13 @@ import pandas as pd
 from utils import unique_values
 from model_loader import Model
 
+
+st.set_page_config(
+    page_title="Salary Predictor",
+    page_icon="💖",
+    initial_sidebar_state="collapsed",
+)
+st.markdown("""<style>.css-9s5bis.edgvbvh3 {visibility:hidden;}.css-h5rgaw.egzxvld1{visibility:hidden;}</style>""",unsafe_allow_html=True)
 st.header("Welcome.. Please fill the form below carefully  ")
 st.caption("It can give you a great Idea about how much your salary can be based on your preference of the job")
 
